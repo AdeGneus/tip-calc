@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style/style.css">
+    <title>Tip Calculator</title>
+</head>
+<body>
+    <div class="container card">
+        <h1 class="heading">Tip Calculator</h1>
+        <!--bill input -->
+        <form id="tip-bill">
+            <div class="input">
+                <input type="number" name="amount" id="amount" placeholder="Bill Amount (&#8358;)"> 
+            </div>
+            <div class="input">
+                <input type="number" name="tip" id="tip" placeholder="Tip %">
+            </div>
+            <div class="input">
+                <input type="number" name="people" id="people" placeholder="No of People">
+            </div>
+            <div class="input">
+                <input type="button" value="Calculate Bill" id="calculate-bill">
+            </div>
+            <div class="input">
+                <input type="button" value="Reset" id="reset">
+            </div>
+        </form>
+        
+        <!-- Loader -->
+        <div id="loading">
+            <img src="Image/loading.gif" alt="loading image">
+        </div>
+
+        <!-- Results -->
+        <div class="results"></div>
+
+        <footer>
+            <p>Coded by Wasiu Bakare for Ekobits & Tunga, &copy;2021</p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

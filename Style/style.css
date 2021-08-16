@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #343A40;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+#loading {
+    text-align: center;
+    display: none;
+}
+
+.container {
+    width: 80%;
+    max-width: 500px;
+    margin: 0 auto;
+    background: #fff;
+    color: #212529;
+    margin-bottom: 24px;
+}
+
+.card {
+    /* width: 500px; */
+    margin-top: 24px;
+    padding: 16px 32px;
+    border-radius: 5px;
+}
+
+.container .error {
+    width: 100%;
+    background: #db434f;
+    color: #fff;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.container h1{
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+#tip-bill {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+
+#tip-bill div {
+    margin-bottom: 12px;
+}
+
+#tip-bill .input {
+    width: 100%;
+}
+
+.input input {
+    width: 100%;
+    border: 2px solid #d8e0e9;
+    border-radius: 4px;
+    padding: 12px;
+}
+
+.input input[type="number"]::placeholder {
+    font-size: 16px;
+}
+
+.input input[type="number"]:focus {
+    outline: #d8e0e9;
+}
+
+.input input[type="button"] {
+    font-size: 20px;
+    text-align: center;
+    background: #23272B;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 0;
+}
+
+.input #reset {
+    background: #db434f;
+}
+
+.results {
+    width: 100%;
+}
+
+.row1, .row2 {
+    display: flex;
+    flex: 1;
+    margin-top: 16px;
+}
+
+.row1 .total-bill, .row1 .tip-amount {
+    background: #7192b8;
+    color: #fff;
+    margin-right: 24px;
+    padding: 16px 20px;
+    width: 50%;
+    border-radius: 5px;
+    box-shadow: 6px, 12px, #23272B;
+}
+
+.results p {
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+
+.row2 .individual, .row2 .individual-bill {
+    background: #7192b8;
+    color: #fff;
+    margin-right: 24px;
+    padding: 12px 24px;
+    width: 50%;
+    border-radius: 5px;
+    box-shadow: 6px, 12px, #23272B
+}
+
+.row1 .tip-amount, .row2 .individual-bill {
+    margin-right: 0;
+}
+
+.row1 .total-bill {
+    background: rgba(5, 5, 248, 0.7);
+}
+
+.row1 .tip-amount {
+    background: rgba(32, 134, 32, 0.5);
+}
+
+.row2 .individual {
+    background: rgba(80, 192, 80, 0.7);;
+}
+
+.row2 .individual-bill {
+    background: rgba(5, 5, 248, 0.5);
+}
+
+footer p {
+    text-align: center;
+    margin-top: 12px;
+    color: #7192b8;
+}
